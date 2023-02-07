@@ -7,19 +7,22 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <style>
         body
         {
             padding: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     
-    <h1>Formular elemente</h1>
+    <h1>Formular element</h1>
+    
+    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
 
     <p>
         Ein formular hat 2 essentielle attribute, action="", gibt den pfad zu unserer validierung/auswertung an. Außerdem gibt es method="", die methode, mit der wir die daten bearbeiten, also GET(Daten anfragen) und POST(daten senden.)
@@ -39,7 +42,12 @@
     <label for="username">Username</label>
 
     <!-- das input element beinhaltet mehrere attribute, darunter unter anderem "type", as angibt welche art von inhalt das input element annimmt, "name", den namen des inhaltes,der an den server geschickt wird, und "value", den wert der an den server geschickt wird. -->
-    <input type="text" name="username" id="username-input" placeholder="Bitter username eingeben">
+    <input 
+        type="text" 
+        name="username" 
+        id="username-input" 
+        placeholder="Bitter username eingeben" >
+    
 
     <br>
 
@@ -72,7 +80,7 @@
 <form action="">
     <h3>Text</h3>
 
-    <label for="inputtext">Text</label>
+    <label for="inputtext">Text:</label>
     <input 
         type="text"
         name="inputtext"
@@ -83,11 +91,11 @@
 
     <p>das attribut placeholder="" definiert, was angezeigt werden soll, wenn das input feld leer ist.</p>
 
-    <p>das attribut maxlength="" definiert, wie viele zeichen in das input feld geschrieben werden duerfen.</p>
+    <p>das attribut maxlength="" definiert, wie viele zeichen in das input feld geschrieben werden dürfen.</p>
 
     <h3>Password</h3>
 
-    <label for="inputpassword">Password</label>
+    <label for="inputpassword">Password:</label>
 
     <input 
         type="password"
@@ -102,7 +110,7 @@
 
     <h3>E-mail</h3>
 
-    <label for="inputemail">E-mail</label>
+    <label for="inputemail">E-mail:</label>
 
     <input 
         type="email"
@@ -113,18 +121,16 @@
 
     <p>Ein e-mail feld sollte mit den e-mail adressen regeln validieren, also von dem @ mindestens 1 buchstabe, ein @ symbol, eine domain, und eine oder mehr top-level domains.</p>
 
-    <br>
-
     <h3>Number</h3>
 
-    <label for="inputnumber">Number</label>
+    <label for="inputnumber">Number:</label>
     <input 
         type="number"
         name="inputnumber"
         id="number-input"
         max="25"
         min="8"
-        value="10"
+        value="20"
     >
 
     <p>mit min und max können wir die kleinste und gröste auswählbare zahl angeben.</p>
@@ -146,14 +152,16 @@
 
     <h3>Textarea</h3>
 
-    <label for="inputtextarea">Textarea</label>
+    <label for="inputtextarea">Textarea:</label>
+    <br>
     <textarea 
         name="inputtextarea" 
         id="textarea-input" 
-        cols="30" 
-        rows="15"
-        placeholder="Hier koennten wir seeeehr vile text eingeben....."
-    ></textarea>
+        cols="40" 
+        rows="10"
+        placeholder="Hier koennten wir seeeehr vile text eingeben...."
+    >
+Hallo</textarea>
 
     <p>ein textarea element unterscheidet sich von input-elementen, da man hier den gewünschten text direkt zwischen die element tags platziert, nicht als value.</p>
 
@@ -162,6 +170,7 @@
     <h3>Buttons</h3>
 
     <p>Ein submit button, ist dafür da, ein formular abzuschicken.</p>
+
     <input type="submit" value="Abschicken">
 
     <p>ein reset button, ist dafür da, ein formular zuruckzusetzen.</p>
@@ -172,13 +181,13 @@
 
 <p>Ein button des types "button" ist dafür da, events in javascript auszufühern, dafür wird kein formular benötigt.</p>
 
-<input type="button" value="Click" onclick="alert('Hallo')">
+<input type="button" value="Click me" onclick="alert('Hallo')">
 
 <br>
 
 <p>Der button über diesem text, ist ein äquivalent zu dem folgenden button, nur das man hier den text direkt zwischen die element tags schreibt - und dieser "button" des types "button" meist in javascript ohne formular benutzt wird.</p>
 
-<button onclick="alert('ich bin da!');">Click</button>
+<button onclick="alert('Hallo again from button element')">Click</button>
 
 <h2>Checkbox</h2>
 
@@ -191,7 +200,7 @@
         type="checkbox"
         name="inputcheckbox1"
         id="checkbox-input1"
-        value="apfel"
+        value="apfellll"
     >
     <label for="inputcheckbox1">Apfel</label>
 
@@ -264,12 +273,12 @@
 
     <h2>Select</h2>
 
-    <p>Eine select box, hat mehrere optionen aus denen wir etwas auswaehlen koennen, die einzelnen auswaehlbare werte sind mit dem "option" element erstellbar.</p>
+    <p>Eine select box, hat mehrere optionen aus denen wir etwas auswaehlen koennen, die einzelnen auswählbare werte sind mit dem "option" element erstellbar.</p>
 
     <b>Formular 6:</b>
 
     <form action="">
-        <label for="valuelist">Color list</label>
+        <label for="valuelist">Color list: </label>
         <select 
             name="valuelist" 
             id="value-list-input"
@@ -292,7 +301,7 @@
 
     <form action="">
 
-        <label for="inputlist">List of Fruits</label>
+        <label for="inputlist">List of Fruits:</label>
 
         <input list="fruitlist" id="inputlist" name="inputlist">
 
@@ -305,8 +314,6 @@
             <option value="peach"></option>
         </datalist>
 
-        <br>
-
         <input type="submit" value="Send">
     </form>
 
@@ -317,11 +324,11 @@
     <b>Formular 8:</b>
 
     <form action="">
-        <label for="colorpicker">Color</label>
+        <label for="colorpicker123">Color</label>
 
         <input 
             type="color"
-            name="colorpicker"
+            name="colorpicker123"
             id="colorpicker"
             value="#3cafe2"
         >
@@ -333,13 +340,13 @@
 
     <form action="">
         <label for="datepicker">Date</label>
-        <input type="date" name="dtepicker" id="datepicker">
+        <input type="date" name="datepicker" id="datepicker">
     </form>
 
     <h2>Formularsttributen</h2>
 
     <form action="">
-        <p>ein feld mit dem attribut "readonly" kann nur gelesen werdenm kopiert oder selektiert werden, der inhalt kann aber nicht verändert werden.</p>
+        <p>ein feld mit dem attribut "readonly" kann nur gelesen werden kopiert oder selektiert werden, der inhalt kann aber nicht verändert werden.</p>
 
         <label for="inputreadonly">Nur lesbar: </label>
         <input 
@@ -351,7 +358,7 @@
 
         <br>
 
-        <p>ein feld mit dem attribut "required" muss ausgefuellt werden, damit das formular abgeschickt werden kann.</p>
+        <p>ein feld mit dem attribut "required" muss ausgefüllt werden, damit das formular abgeschickt werden kann.</p>
 
         <label for="inputrequired"> Nötig zum absenden: </label>
         <input 

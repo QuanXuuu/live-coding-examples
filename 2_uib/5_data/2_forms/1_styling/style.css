@@ -12,19 +12,21 @@ input[type=password]
     /* border: 2px solid blue; */
     /* outline ist eine art border, die keinen platz um das element herrum weg nimmt. */
     outline:2px solid blue;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
-/* mit der pseudo-klasse :focus koennen wir definieren, wenn wir eie form-element selektiert (also zb angeklickt) haben. */
+/* mit der pseudo-klasse :focus können wir definieren, wenn wir ein form-element selektiert (also z.b. angeklickt) haben. */
 input[type=password]:focus
 {
     background-color: lime;
+    outline: none;
+    border: none;
 }
 
 /* das pseudoattribut disabled spricht form elemente an, die das attribut "disabled" haben. */
 input[type=text]:disabled
 {
-    background-color: darkgray;
+    background-color: orange;
 }
 
 input[disabled]
@@ -33,15 +35,15 @@ input[disabled]
 }
 
 /* das pseudoattribut read-only spricht form elemente an, die nur lesbar sind, also das attribut "readonly" haben. */
-input[type=text]:read-only
+/* input[type=text]:read-only
 {
     background-color: cyan;
-}
+} */
 
 /* der obere selektor gilt auch fuer den disabled state, weil ein disabled element auch read-only (also nur lesbar) ist. */
 input[readonly]
 {
-    color: purple;
+    color: lime;
 }
 
 #normalecheckbox
@@ -63,8 +65,10 @@ input[readonly]
 {
     content: "✔";
     position: absolute;
-    top: calc(50% - 16px);
-    left: calc(50% - 14px);
+    /* top: calc(50% - 16px); */
+    /* left: calc(50% - 14px); */
+    top: 10%;
+    left:20%;
     font-size: 32px;
     color: white;
 }
