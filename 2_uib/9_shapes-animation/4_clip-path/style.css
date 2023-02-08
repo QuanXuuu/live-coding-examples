@@ -1,0 +1,42 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 10px;
+}
+
+img
+{
+    display: block;
+    margin: 10px auto;
+}
+
+.circle
+{
+    clip-path: circle(100px);
+}
+
+.circle-2
+{
+    clip-path: circle(100px at 50px 50px);
+    /*                   horizontal vertikal */
+}
+
+.ellipse
+{
+    clip-path: ellipse(100px 50px);
+    /*             horizontal vertikal */
+}
+
+.polygon
+{
+    clip-path: polygon(
+        /* horizontal vertikal */
+        50%             0%,
+        0%             100%,
+        100%           100%
+    );
+}
