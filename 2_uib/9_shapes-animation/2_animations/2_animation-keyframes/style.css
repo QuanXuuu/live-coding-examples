@@ -1,0 +1,143 @@
+.box
+{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box-beispiel-1
+{
+    /* Der name unserer keyframe query */
+    animation-name: beispiel;
+
+    /* Die Zeit, die die animation benoetigt um durchzulaufen. */
+    animation-duration: 2s;
+
+    animation-timing-function: linear;
+}
+
+.box-beispiel-2 
+{
+    animation-name: beispiel;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    /* animationsdurchlaeufe */
+    animation-iteration-count: 2;
+
+    /* animationsrichtung */
+    animation-direction: reverse;
+}
+
+.box-beispiel-3
+{
+    animation-name: beispiel;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+.box-beispiel-4
+{
+    animation-name: beispiel;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+    /* unendliche animationsdurchlaeufe */
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+
+.box-beispiel-5:hover
+{
+    animation-name: beispiel;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+}
+
+.box-beispiel-6
+{
+    animation-name: bewegung;
+    animation-duration: 5s;
+    /* minus werte, bedeuten, das die animation INNERHALB seines verlaufes startet */
+    animation-delay: -1s;
+
+    /* wie starten die animaiton im state pausiert */
+    animation-play-state: paused;
+}
+
+.box-beispiel-6:hover
+{
+    /* animaiton fortsetzen */
+    animation-play-state: running;
+}
+
+.box-shortcode
+{
+    animation: beispiel 5s ease-in alternate infinite;
+}
+
+.box-beispiel-erweitert
+{
+    animation: erweitert 10s ease-in-out alternate infinite;
+}
+
+/* name der keyframe animaition */
+@keyframes beispiel 
+{
+    /* animiere von */
+    from 
+    {
+        background-color: tomato;
+        width: 100px;
+    }
+
+    /* zu... */
+    to 
+    {
+        background-color: lime;
+        width: 200px;
+    }
+}
+
+@keyframes bewegung
+{
+    from
+    {
+        width: 100px;
+    }
+    to 
+    {
+        width:400px;
+    }
+}
+
+@keyframes erweitert
+{
+    0% 
+    {
+        background-color: tomato;
+        width: 100px;
+        color: white;
+        padding: 10px;
+    }
+    50%
+    {
+        background-color: cyan;
+        width: 300px;
+        color: red;
+        padding: 30px;
+    }
+    100%
+    {
+        background-color: tomato;
+        width: 150px;
+        color: lime;
+        padding: 0;
+    }
+}
