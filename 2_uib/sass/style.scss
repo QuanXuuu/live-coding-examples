@@ -1,0 +1,25 @@
+@mixin box
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.box1
+{
+    @include box;
+    background-color: red;
+}
+
+.box2
+{
+    @include box;
+    background-color: blue;
+}
+
+.box3
+{
+    @include box;
+    background-color: green;
+}
