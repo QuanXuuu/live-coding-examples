@@ -14,7 +14,7 @@ div
 .heart
 {
     margin-top: 100px;
-    background-color: tomato;
+    /* background-color: tomato; */
     width: 100px;
     height: 100px;
     transform: rotate(-45deg);
@@ -47,6 +47,11 @@ div
     background-color: darkred;
 }
 
+.heart::after
+{
+    background-color: lime;
+}
+
 .diamond
 {
     margin-top: 50px;
@@ -58,7 +63,7 @@ div
     position: relative;
 }
 
-.diamond::after
+.diamond::before
 {
     content: "";
     position: absolute;
@@ -75,6 +80,7 @@ div
     width: 60px;
     height: 90px;
     border-bottom: 14px solid tomato;
+    /* border: 14px solid lime; */
     transform: scale(0.7);
     position: relative;
 }
