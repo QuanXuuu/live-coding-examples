@@ -17,7 +17,7 @@ div
 
 .scale-2
 {
-    transform: scale(1.5, 0.5);
+    transform: scale(2, 0.5);
     /* scale: 1.5 0.5; */
 }
 
@@ -25,13 +25,13 @@ div
 {
     /* es ist moeglich, bei transform, mehrere befehle aneinanderzureihen. */
     transform: scaleX(2) scaleY(1.2);
-    transition: 0.5s linear;
+    transition: 2s linear;
 }
 
-.scale-3:hover
+/* .scale-3:hover
 {
     transform: scaleX(1) scaleY(2);
-}
+} */
 
 .scale-3 p
 {
@@ -46,26 +46,26 @@ div
 
 .translate-2
 {
-    transform: translateX(-20%);
+    transform: translateX(-80%);
 }
 
 .translate-3
 {
     transform:
         translateY(-20px)
-        scaleX(2.0)
+        scale(2.0)
 }
 
 .rotate-1
 {
     /* bei rotate, koennen wir die drehung in grad, also degree angeben */
-    transform: rotate(175deg);
+    transform: rotate(90deg);
     /* rotate: 175deg; */
 }
 
 .rotate-2
 {
-    transform: rotate(0.75turn)
+    transform: rotate(0.25turn)
 }
 
 .rotate-3
@@ -73,12 +73,12 @@ div
     transform:
         rotate(25deg)
         scale(0.9)
-        translateY(-20px);
+        translateY(20px);
 }
 
 .skew-1
 {
-    transform: skew(30deg, 10deg);
+    transform: skew(30deg);
 }
 
 .skew-2
@@ -99,6 +99,6 @@ div
 {
     transform:  
         /* die entfernung der kamera zum element */
-        perspective(500px)
+        perspective(200px)
         rotateY(55deg)
 }
