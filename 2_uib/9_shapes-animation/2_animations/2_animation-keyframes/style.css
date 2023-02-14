@@ -27,7 +27,7 @@
     /* animationsdurchlaeufe */
     animation-iteration-count: 2;
 
-    /* animationsrichtung */
+    /* animationsrichtung */     
     animation-direction: reverse;
 }
 
@@ -75,7 +75,7 @@
 .box-beispiel-6:hover
 {
     /* animaiton fortsetzen */
-    animation-play-state: running;
+    animation-play-state:running;
 }
 
 .box-shortcode
