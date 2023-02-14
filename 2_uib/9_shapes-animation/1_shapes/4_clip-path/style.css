@@ -21,13 +21,13 @@ img
 
 .circle-2
 {
-    clip-path: circle(100px at 50px 50px);
+    clip-path: circle(200px at 100% 0);
     /*                   horizontal vertikal */
 }
 
 .ellipse
 {
-    clip-path: ellipse(100px 50px);
+    clip-path: ellipse(100px 30px);
     /*             horizontal vertikal */
 }
 
@@ -35,8 +35,8 @@ img
 {
     clip-path: polygon(
         /* horizontal vertikal */
-        50%             0%,
-        0%             100%,
-        100%           100%
+        80%             0%,
+        0%             90%,
+        100%           50%
     );
 }
