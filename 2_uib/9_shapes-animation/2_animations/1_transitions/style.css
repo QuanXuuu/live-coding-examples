@@ -10,12 +10,13 @@ body
     height: 100px;
     background-color: tomato;
     margin: 0 auto 25px;
+    text-align: center;
+    line-height: 100px;
 }
 
-.box:hover
+.container:hover .box
 {
     width: 300px;
-    /* height: 200px; */
 }
 
 .transbox-1
@@ -88,20 +89,20 @@ body
 .container:hover .box-all
 {
     background-color: lime;
-    color:white;
+    color:purple;
 }
 
 .box-mix-1
 {
-    transition-property: width, background;
+    transition-property: width, background-color;
     transition-duration: 1s;
     transition-timing-function: linear;
 }
 
 .box-mix-2
 {
-    transition-property: width, background, color;
-    transition-duration: 1s, 5s, 2s;
+    transition-property: width, background-color, color;
+    transition-duration: 1s, 15s, 2s;
     transition-timing-function: linear;
 }
 
@@ -127,7 +128,7 @@ body
 {
     transition: 
         width  1s linear,
-        background 1s ease-in 1s,
+        background-color 1s ease-in 10s,
         border-radius 0.5s linear 2s;
 }
 

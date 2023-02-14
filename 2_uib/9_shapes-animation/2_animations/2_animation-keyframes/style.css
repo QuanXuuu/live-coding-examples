@@ -13,7 +13,7 @@
     /* Der name unserer keyframe query */
     animation-name: beispiel;
 
-    /* Die Zeit, die die animation benoetigt um durchzulaufen. */
+    /* Die Zeit, die die animation benötigt um durchzulaufen. */
     animation-duration: 2s;
 
     animation-timing-function: linear;
@@ -34,10 +34,11 @@
 .box-beispiel-3
 {
     animation-name: beispiel;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
-    animation-iteration-count: 4;
+    animation-iteration-count: 3;
     animation-direction: alternate;
+    color: purple;
 }
 
 .box-beispiel-4
@@ -79,6 +80,7 @@
 
 .box-shortcode
 {
+    /*      name  duration  timing-function direction count*/
     animation: beispiel 5s ease-in alternate infinite;
 }
 

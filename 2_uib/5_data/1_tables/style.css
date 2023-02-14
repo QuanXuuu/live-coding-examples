@@ -55,15 +55,17 @@ td
     background-color: orange;
     font-size: 32px;
     height:50px;
-
     /* line-height:; gibt an, wie zentriert ein text innerhalb seines elternelementes ist (oder den abstand zwischen paragraphen zeilen */
     line-height: 50px;
+    /* caption-side: bottom; */
 }
 
-#table-8 caption .bottom
+#table-8 caption.bottom
 {
-    /* mit caption-side:; können wir definieren, auf welcher seite der tabelle sich unsere caption befindet */
+    /* mit caption-side: ; können wir definieren, auf welcher seite der tabelle sich unsere caption befindet */
     caption-side: bottom;
+    /* color: red;
+    z-index: 999; */
 }
 
 #table-8 th
@@ -73,7 +75,7 @@ td
     height: 50px;
     text-align: left;
     /* mit vertical-align:; können wir definieren, wo sich unser text auf der vertikalen achse des datenfeldes befindet (top, middle, bottom) */
-    vertical-align: bottom;
+    vertical-align:middle;
     padding-left: 10px;
 }
 
@@ -81,38 +83,44 @@ td
 {
     padding: 10px;
 }
+
 #table-8 tr:nth-child(even)
 {
     background: darkgray
 }
+
 #table-8 tr:nth-child(odd)
 {
     background: grey;
 }
+
 #table-8 th,
 #table-8 td
 {
     border: 2px solid lime;
 }
+
 #table-8 tr:hover
 {
     background: black;
     color: white;
 }
+
 #table-8 td:hover
 {
     background: tomato;
     color: white;
     cursor: pointer;
 }
+
 #table-8 .first-name
 {
-    width: 300px;
+    width: 400px;
 }
 
 #table-9
 {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
 }
 
@@ -138,7 +146,7 @@ td
 {
     display: table;
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 10px;
     border: 1px solid black;
 }
 
@@ -155,7 +163,7 @@ td
 {
     display: table-cell;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 
 #table-10 .table-header > .table-data
