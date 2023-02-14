@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+</head>
+<body>
+    
+<h1>Font-icons mit FontAwesome</h1>
+
+<h2>Font Awesome</h2>
+
+<i class="fas fa-yin-yang"></i>
+
+<p>(fab: FontAwesome Brand)</p>
+
+<h3>Große</h3>
+
+<p>Mit einer weiteren klasse, faX gefolgt von einigen größeneinheiten, können wir die icons direkt vergrößen oder verkleiner.</p>
+
+<ul>
+    <li><i class="fas fa-yin-yang fa-xs"></i></li>
+    <li><i class="fas fa-yin-yang fa-sm"></i></li>
+    <li><i class="fas fa-yin-yang"></i></li>
+    <li><i class="fas fa-yin-yang fa-lg"></i></li>
+    <li><i class="fas fa-yin-yang fa-2x"></i></li>
+    <li><i class="fas fa-yin-yang fa-3x"></i></li>
+    <li><i class="fas fa-yin-yang fa-4x"></i></li>
+</ul>
+
+<p>(Max: fa-10x)</p>
+
+<p>Wir können mit klassen in css arbeiten und fonticons genauso benutzen wie schriften.</p>
+
+<div class="box">
+    <i class="fas fa-yin-yang"></i>
+    <i class="fas fa-wheelchair"></i>
+</div>
+
+<h3>Icons animieren</h3>
+
+<p>Mit der klasse .fa-pulse und .fa-spin können wir icons auch rotieren lassen.</p>
+
+<i class="fab fa-linkedin-in fa-pulse fa-6x"></i>
+<i class="fab fa-linkedin-in fa-spin fa-6x"></i>
+
+<h3>Icons drehen</h3>
+
+<p>mit .fa-rotate koennen wir die icons von vorneherein ein wenig drehen.</p>
+
+<i class="fab fa-linkedin-in fa-rotate-90 fa-4x"></i>
+<i class="fab fa-linkedin-in fa-rotate-270 fa-6x"></i>
+
+<h3>Icons spiegeln</h3>
+
+<p>mit .fa-flip können wir die icons umdrehen/spiegeln, vertikal und horizontal</p>
+
+<i class="fab fa-linkedin-in fa-4x fa-flip-horizontal"></i>
+
+<i class="fab fa-linkedin-in fa-4x fa-flip-vertical"></i>
+
+<h3>Icons übereinanderlegen</h3>
+
+<p>wir können icons auch miteinander verwenden, wenn wir den sogenannten "stack" benutzen.</p>
+
+<p>Auch hier wird das dokument von oben nach unten gelesen, elemente die tiefer im stack sitzen, sind also im vordergrund.</p>
+
+<span class="fa-stack fa-2x">
+    <i class="fas fa-camera fa-stack-1x"></i>
+    <i class="fas fa-ban fa-stack-2x" style="color: red"></i>
+</span>
+
+<h3>Selbst icons in klassen verwenden</h3>
+
+<p>Wir können symbole auch selbst einfuegen, wenn wir das before einer klasse im content des symbol benutzen, und die inhalte der fas kalsse kopieren.</p>
+
+<i class="fas eigenes-symbol">Hello</i>
+
+</body>
+</html>

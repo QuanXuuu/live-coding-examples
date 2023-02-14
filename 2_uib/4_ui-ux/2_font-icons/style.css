@@ -1,0 +1,35 @@
+body
+{
+    padding: 10px;
+}
+
+.box
+{
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box .fa-yin-yang
+{
+    font-size: 32px;
+    color: tomato;
+}
+
+.box .fa-wheelchair
+{
+    font-size: 2em;
+    background-color: lime;
+}
+
+.eigenes-symbol
+{
+    font-size: 32px;
+    color: red;
+}
+
+.eigenes-symbol::before
+{
+    content: "\f45f";
+}
