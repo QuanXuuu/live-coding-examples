@@ -89,7 +89,7 @@ body
 .container:hover .box-all
 {
     background-color: lime;
-    color:purple;
+    color:orange;
 }
 
 .box-mix-1
@@ -102,7 +102,7 @@ body
 .box-mix-2
 {
     transition-property: width, background-color, color;
-    transition-duration: 1s, 15s, 2s;
+    transition-duration: 10s, 10s, 2s;
     transition-timing-function: linear;
 }
 
@@ -120,7 +120,7 @@ body
 
 .box-short-1
 {
-    /*       property duration function delay*/
+    /*     property duration function delay*/
     transition: all 1s linear 1s;
 }
 
