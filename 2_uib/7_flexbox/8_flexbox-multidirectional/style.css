@@ -9,12 +9,12 @@ main
     display: flex;
 }
 
-.vertical
+.horizontal
 {
     flex-direction: column;
 }
 
-.horizontal
+.vertical
 {
     flex-direction: row;
 }
@@ -38,13 +38,37 @@ main
     background-color: plum;
 }
 
-.container .horizontal
+.container .vertical
 {
     background-color: tomato;
     border: 4px solid blue;
 }
 
-.container .horizontal .small
+.container .vertical .small
 {
     background-color: lime;
+}
+
+@media (min-width: 610px)
+{
+    .horizontal
+    {
+        flex-direction: row;
+    }
+    .vertical
+    {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 650px)
+{
+    .horizontal
+    {
+        flex-direction: column;
+    }
+    .vertical
+    {
+        flex-direction: row;
+    }
 }
