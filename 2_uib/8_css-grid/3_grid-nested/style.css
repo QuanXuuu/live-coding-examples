@@ -10,9 +10,10 @@
 
     display: grid;
     /* margin-abstände zwischen grid elementen: */
-    /* gap: 10px; */
-    row-gap:20px;
-    column-gap: 10px;
+    /* row-gap:20px;
+    column-gap: 10px; */
+    gap: 20px 10px;
+    /* gap = row-gap column-gap */
 }
 
 .box
@@ -28,7 +29,7 @@
 
     /* display: grid; erstellt ein neues grid element. */
     display: grid;
-    grid-gap:40px;
+    grid-gap:40px 10px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 5fr 100px; 
 }
