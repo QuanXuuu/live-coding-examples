@@ -10,7 +10,7 @@ body{
 .container
 {
     border: 5px solid tomato;
-    display: inline-flex;
+    display: flex;
     width: 500px;
     height:100px;
 }
