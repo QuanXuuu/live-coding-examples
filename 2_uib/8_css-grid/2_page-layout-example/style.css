@@ -7,9 +7,9 @@
     display: grid;
     height:100vh;
     padding: 10px;
-    background-color: aqua;
+    background-color: #fff;
 
-    grid-template-rows: 100px auto 150px;
+    grid-template-rows: 100px auto 120px;
 }
 
 .box
@@ -21,7 +21,7 @@
 
 .content
 {
-    overflow-y: scroll ;
+    overflow-y: scroll;
 }
 
 .header
@@ -31,9 +31,9 @@
     color: white;
 
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 250px auto;
 
-    /* padding: 0; */
+    padding: 0;
 }
 
 .menu
