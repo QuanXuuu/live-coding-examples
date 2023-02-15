@@ -32,7 +32,8 @@
     /* grid-column-start: 1;  starte in der ersten spalte */
     /* grid-column-end: 5; bis zum start der 5.spalte(also inklusive der 4) */
 
-    grid-column: 2 / span 2;
+    grid-column: 2 / 4;
+    /* => grid-column: 2 / span 2 */
 }
 
 .box-2
@@ -43,6 +44,8 @@
     grid-row-start: 1;
     grid-row-end: 4;
     /* shortcode: grid-row:;  */
+    /* => grid-row: 1 / 4; */
+    /* => grid-row: 1 / span 3; */
 
 }
 
