@@ -23,7 +23,7 @@ body
     flex-grow: 0;
     flex-shrink: 0;
     /* flex-basis: ; definiert die ausgangsgroesse des elements */
-    flex-basis:150px;
+    flex-basis:180px;
 }
 
 /* shorthand fuer flex befehle:
