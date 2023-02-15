@@ -3,6 +3,18 @@
     box-sizing: border-box;
 }
 
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+
+    /* equivalent zu grid-row-gap: ; / grid-column-gap:; */
+    gap: 10px 50px; /* oder grip-gap */
+
+    padding: 10px;
+    background-color: cyan;
+}
+
 .box
 {
     background-color: tomato;
@@ -11,17 +23,6 @@
     text-align: center;
 }
 
-.container
-{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-
-    /* equivalent zu grid-row-gap: ; / grid-column-gap:; */
-    gap: 10px; /* oder grip-gap */
-
-    padding: 10px;
-    background-color: cyan;
-}
 
 .bigger-box
 {
