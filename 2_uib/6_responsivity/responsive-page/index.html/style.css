@@ -3,54 +3,53 @@
     box-sizing: border-box;
 }
 
-/* Wie designen als erstes unsere mobilansicht */
+/* wir designen als erstes unsere mobilansicht */
 header
 {
     height: 50px;
-    width:100vw;
-    background-color: black;
+    width: 100vw;
+    background: black;
 }
 
 h1
 {
     margin-top: 0;
     margin-bottom: 0;
-    color:white;
+    color: white;
     text-align: center;
     line-height: 50px;
     font-size: 1rem;
 }
-
 #werbebox
 {
-    background-color: gray;
+    background: hotpink;
     padding: 10px;
     display: none;
 }
-
 aside
 {
     width: 100%;
     display: inline-block;
-    background-color: gray;
+    background: gray;
     height: 50px;
 }
-
 #container
 {
-    width:100%;
+    width: 100%;
     display: inline-block;
 }
 
-/* Wir schreiben unsere spezifischen änderungen für andere anflösungen, wir fangen standardmäßig bei 769px, also der desktop ansicht an. Wir können auch, wenn wir wollen/ oder wenn nötig, bei der portaritauflösung eines tablets anfangen. das wären denn 481px. */
-
+/* wir schreiben unsere spezifischen änderungen für andere auflösungen, wir fangen standardmäßig bei 769px, also der desktop ansicht an. Wir kö nnen auch, wenn wir wollen/oder wenn nötig, bei der portraitauflösung eines tablets anfangen. das wären dann 481px. */
 @media (min-width: 769px)
 {
+    #werbebox
+    {
+        display: block;
+    }
     header
     {
-        height:100px;
+        height: 100px;
     }
-
     header h1
     {
         text-align: left;
@@ -62,7 +61,7 @@ aside
     aside
     {
         width: 30%;
-        height:100vh;
+        height: 100vh;
     }
 
     #container
@@ -70,30 +69,28 @@ aside
         width: 70%;
     }
 }
-
 @media (min-width: 1025px)
 {
     aside
     {
         width: 20%;
     }
-
     #container
     {
         width: 80%;
     }
 }
 
-/* spezielle auflösungen für RETINA displays*/
+/* spezielle auflösungen für RETINA displays */
 @media screen
     and (min-device-width: 1200px)
-    and (min-device-width: 1600px)
+    and (max-device-width: 1600px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (min-resolution: 192dpi)
 {
-    body 
+    body
     {
-        background-color: pink;
+        background: hotpink;
     }
 }
 
@@ -102,6 +99,6 @@ aside
 {
     body
     {
-        background-color: rebeccapurple;
+        background: rebeccapurple;
     }
 }
