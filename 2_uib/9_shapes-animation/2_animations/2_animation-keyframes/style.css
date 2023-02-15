@@ -80,7 +80,7 @@
 
 .box-shortcode
 {
-    /*      name  duration  timing-function direction count*/
+    /*    name  duration  timing-function direction count*/
     animation: beispiel 5s ease-in alternate infinite;
 }
 
