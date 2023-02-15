@@ -38,3 +38,8 @@ body
 {
     flex-shrink: 1;
 }
+
+.shrink-box-2
+{
+    flex-shrink: 2;
+}
