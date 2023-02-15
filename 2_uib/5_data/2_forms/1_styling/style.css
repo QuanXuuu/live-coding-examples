@@ -11,8 +11,8 @@ input[type=password]
 
     /* border: 2px solid blue; */
     /* outline ist eine art border, die keinen platz um das element herrum weg nimmt. */
+    border: 2px solid red;
     outline:2px solid blue;
-    /* border: 2px solid red; */
 }
 
 /* mit der pseudo-klasse :focus können wir definieren, wenn wir ein form-element selektiert (also z.b. angeklickt) haben. */
@@ -65,10 +65,10 @@ input[readonly]
 {
     content: "✔";
     position: absolute;
-    /* top: calc(50% - 16px); */
-    /* left: calc(50% - 14px); */
-    top: 10%;
-    left:20%;
+    top: calc(50% - 16px); 
+    left: calc(50% - 14px);
+    /* top: 10%;
+    left:20%; */
     font-size: 32px;
     color: white;
 }

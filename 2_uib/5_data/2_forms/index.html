@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
         body
@@ -16,13 +16,14 @@
             padding: 10px;
             font-size: 1.2em;
         }
+
     </style>
 </head>
 <body>
     
     <h1>Formular element</h1>
     
-    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+    <i class="fas fa-yin-yang"></i>
 
     <p>
         Ein formular hat 2 essentielle attribute, action="", gibt den pfad zu unserer validierung/auswertung an. Außerdem gibt es method="", die methode, mit der wir die daten bearbeiten, also GET(Daten anfragen) und POST(daten senden.)
@@ -47,8 +48,6 @@
         name="username" 
         id="username-input" 
         placeholder="Bitter username eingeben" >
-    
-
     <br>
 
     <!-- ein gutes beispiel für einen anderen input-type ist "password", dieser blendet den eingegebenen wert aus. -->
@@ -244,6 +243,7 @@ Hallo</textarea>
         name="color"
         id="color-input-1"
         value="blue"
+        checked
     >
     <label for="color">Blue Car</label>
 
@@ -340,7 +340,7 @@ Hallo</textarea>
 
     <form action="">
         <label for="datepicker">Date</label>
-        <input type="date" name="datepicker" id="datepicker">
+        <input type="time" name="datepicker" id="datepicker">
     </form>
 
     <h2>Formularsttributen</h2>
