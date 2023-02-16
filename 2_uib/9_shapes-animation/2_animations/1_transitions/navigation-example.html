@@ -14,7 +14,7 @@
             list-style-type: none;
             margin:0;
             padding:0;
-            overflow:hidden;
+            /* overflow:hidden; */
             background-color: #777;
         }
 
@@ -37,16 +37,23 @@
         {
             background-color: #111;
         }
+        
+        .clearfix {
+            /* content: “”; */
+            /* clear: both;
+            display: table; */
+            overflow: auto;
+        }
 
     </style>
 </head>
 <body>
     
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+    <ul class="clearfix">
+        <li ><a class="active" href="#home">Home</a></li>
+        <li ><a href="#">News</a></li>
+        <li ><a href="#">Contact</a></li>
+        <li ><a href="#" >About</a></li>
     </ul>
 </body>
 </html>
