@@ -20,7 +20,7 @@ body
 .box .fa-wheelchair
 {
     font-size: 2em;
-    background-color: lime;
+    color: lime;
 }
 
 .eigenes-symbol
@@ -29,7 +29,22 @@ body
     color: red;
 }
 
-.eigenes-symbol::before
+.eigenes-symbol::after
 {
-    content: "\f45f";
+    content: "\f35d";
 }
+
+.myIcon
+{
+    color: #3cafe2;
+    font-size: 2em;
+}
+
+.myIcon::after
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    /* display: inline-block; */
+    /* content:"test"; */
+}
+
