@@ -41,7 +41,7 @@
 !true; // wird zu false;
 !false; // wird zu true;
 
-
+!typeof(50) // wird nicht zahlen
 
 
 
