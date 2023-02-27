@@ -32,5 +32,7 @@ const bla2 = 10; // bla2 sollte man umbennenen
 
 function testFunction(testWert1)
 {
-    
+
 }
+
+// Wenn wir jsdoc kommentare ald dokumentation ausgeben wollen, koennen wir mit dem befehel 'jsdoc [Dateiname]' im terminal eine webseite mit dokumenttation automatisch erstellen lassen.
