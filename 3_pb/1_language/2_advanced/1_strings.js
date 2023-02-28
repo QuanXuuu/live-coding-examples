@@ -70,3 +70,52 @@ console.log('Getrimmter string:', trimExample.trim(), "|")
 const substringExample = 'Dies ist eine String';
 console.log('Ab der 5. stelle abschneiden:', substringExample.substring(5));
 console.log(substringExample.substring(0, 4), "hier", substringExample.substring(5));
+
+console.log("=============")
+
+// Template literals
+
+/**
+ * @see https://css-tricks.com/template-literals/
+ */
+
+// mit template literals, die mit einleiten, koennen wir werte berechnen oder ganze code strukturen in einen string einfuegen.
+
+const berechnung = 3 * 2;
+const templateLiteralExample = `Ich haette gerne einen tisch fuer ${ berechnung } Personen`;
+console.log(templateLiteralExample);
+
+const personName = "John Doe";
+console.log(`Hallo, mein name ist ${ personName.toUpperCase()}.`);
+
+// Multiline und zusammenfuegungs beispiele:
+const testString1 = 'Dies\nsind\nmehrere\nzeilen';
+console.log(testString1);
+
+const testString2 = "Dies \
+sind \
+mehrere \
+zeilen \
+die \
+zu \
+einer \
+werden";
+console.log(testString2);
+
+const testString3 = "Dies " +
+"ist " + "text.";
+console.log(testString3);
+
+const person ="Jana";
+const tag = "Dienstag";
+const laune = "Nicht so toll";
+
+const brief = `
+Mein Brief
+
+Hallo ${ person}, wie geht es dir?
+Heute ist ${ tag }.
+Mir geht es ${ laune}!
+`;
+
+console.log(brief);
