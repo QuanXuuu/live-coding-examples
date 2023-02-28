@@ -119,3 +119,4 @@ Mir geht es ${ laune}!
 `;
 
 console.log(brief);
+
