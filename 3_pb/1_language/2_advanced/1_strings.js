@@ -1,7 +1,7 @@
 // Strings escapen
   // mit \n koennen wir einen zeilenumbruch einfuegen
 const escapeZeile = "Dies ist\nein mehrzeiliger\nString"
-console.log(escapeZeile);
+console.log(escapeZeile + '1');
 
   //mit \t koennen wir eine tabulator einfuegen(tab)
 const escapeTab = "Dies ist ein g\te\tt\ta\tb\tt string";
@@ -15,7 +15,7 @@ console.log("==========")
 
 // String Funktionen/Methoden/Properties
     // .length: gibt uns die anzahl der zeichen 
-   const lengthExample = "Dies ist ein string.".length;
+   const lengthExample = "Dies ist ein strings".length;
    console.log(lengthExample);
 
 /**
@@ -68,6 +68,7 @@ console.log('Getrimmter string:', trimExample.trim(), "|")
 // .substring();
 // mit .substring(); koennen wir teile des strings ausschneiden, die erste stelle sagt von wo, und die zweite optionale stelle, bis wohin.
 const substringExample = 'Dies ist eine String';
+console.log(substringExample.substring(5));
 console.log('Ab der 5. stelle abschneiden:', substringExample.substring(5));
 console.log(substringExample.substring(0, 4), "hier", substringExample.substring(5));
 
@@ -103,7 +104,9 @@ werden";
 console.log(testString2);
 
 const testString3 = "Dies " +
-"ist " + "text.";
+"ist " + 
+"etwas " +
+"text";
 console.log(testString3);
 
 const person ="Jana";
