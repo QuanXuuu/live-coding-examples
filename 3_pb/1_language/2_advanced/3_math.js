@@ -4,7 +4,7 @@ function divider(input)
     console.log("\n" + spacer, input, spacer, "\n");
 }
 
-divider('Die Math libraty');
+divider('Die Math library');
 
 // Um die mathe bibliothek zu nutzen, schreiben Math gefolgt von einem punkt, und dem befehl den wir nutzen wollen, so machen wir das mit alle arten von methoden.
 

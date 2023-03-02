@@ -34,7 +34,7 @@ console.log('String:', parseExample1);
 console.log('Int:', parseInt(parseExample1));
 
 // Bei kommanzahlen, wird das integer ergebnis (Integer sind ganze zahlen), gerunde auf die naechste ganze zahl.
-const parseExample2 = '2.5';
+const parseExample2 = '2.89';
 console.log('String:', parseExample2);
 console.log('Int: ', parseInt(parseExample2));
 
