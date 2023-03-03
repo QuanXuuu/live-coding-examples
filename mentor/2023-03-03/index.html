@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS in Browser</title>
+</head>
+<body>
+    <h1>Zufallsgenerator</h1>
+
+    <ul>
+        <li>Miad</li>
+        <li>Sabriye</li>
+        <li>Jana</li>
+        <li>Dirk K.</li>
+        <li>Sasa</li>
+        <li>Ghenwa</li>
+        <li>Zoe</li>
+        <li>Naz</li>
+        <li>Dirk S.</li>
+        <li>Julius</li>
+        <li>Behzad</li>
+        <li>Mohammad</li>
+        <li>Melanie</li>
+        <li>Oleg</li>
+        <li>Benjamin</li>
+        <li>Imad</li>
+        <li>Roman</li>
+        <li>Hansi</li>
+        <li>Ruben</li>
+        <li>Pawel</li>
+        <li>Yan</li>
+        <li>Quan</li>
+        <li>Hueseyin</li>
+        <li>Berat</li>
+    </ul>
+
+    <script>
+        // Alle listenelemente finden
+        const list = document.querySelectorAll("ul li");
+        console.log(list);
+
+        // Zufallswert berechnen
+        // console.log(list.length, Math.random(), Math.random() * list.length);
+
+        const randomIndex = Math.floor(Math.random() * list.length);
+        console.log(randomIndex);
+
+        // Person in Liste bestimmen und in konsole ausgeben
+        const randomPersonName = list[randomIndex].innerText;
+        console.log(randomPersonName);
+        alert(randomPersonName);
+        
+    // Math.random()
+    // console.log(4 + 4);
+    // console.warn(4 + 4);
+    // console.error(4 + 4);
+    </script>
+</body>
+</html>
