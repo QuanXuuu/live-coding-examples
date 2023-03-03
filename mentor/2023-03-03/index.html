@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS in Browser</title>
+
+    <style>
+        #overlay
+        {
+            display: none;
+            top: 0;
+            left:0;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        #overlay.show
+        {
+            display: flex;
+        }
+
+        #overlay-inner
+        {
+            padding: 20px;
+            background-color: #FFF;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Zufallsgenerator</h1>
@@ -36,21 +63,49 @@
         <li>Berat</li>
     </ul>
 
+    <button onclick="getRandomPerson()">Zufallsgenerator</button>
+
+    <div id="overlay">
+        <div id="overlay-inner">Platzhalter</div>
+        <button onclick="closeOverlay()">close</button>
+    </div>
+
     <script>
+        // Container erstellen mit inhalt
+        // Mit CSS positionieren und ausblenden(u.a. display: none, z-index, width, height)
+        // Platzhalter angeben => name wird eingefuegt
+        
+        const overlay = document.getElementById("overlay");
+
+        function getRandomPerson(){
+            const list = document.querySelectorAll("ul li");
+       
+            const randomIndex = Math.floor(Math.random() * list.length);
+            
+            const randomPersonName = list[randomIndex].innerText;
+            console.log(randomPersonName);
+
+            overlay.classList.add("show");
+           
+            const overlayInner = document.getElementById("overlay-inner");
+            overlayInner.innerText = `${randomPersonName} wurde ausgewaehlt!`;
+        }
+
+        function closeOverlay(){
+            overlay.classList.remove("show");
+        }
+
+        overlay.addEventListener("click", closeOverlay);
+
         // Alle listenelemente finden
-        const list = document.querySelectorAll("ul li");
-        console.log(list);
+       
 
         // Zufallswert berechnen
         // console.log(list.length, Math.random(), Math.random() * list.length);
 
-        const randomIndex = Math.floor(Math.random() * list.length);
-        console.log(randomIndex);
-
+      
         // Person in Liste bestimmen und in konsole ausgeben
-        const randomPersonName = list[randomIndex].innerText;
-        console.log(randomPersonName);
-        alert(randomPersonName);
+
         
     // Math.random()
     // console.log(4 + 4);
