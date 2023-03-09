@@ -14,12 +14,12 @@ const testBool = true;
 // normals If statement:
 if(testBool)
 {
-    console.log('Dies ist wahr');
+    console.log('1.Dies ist wahr');
 }
 
 if(testBool)
 {
-    console.log('Dies ist wahr');
+    console.log('2.Dies ist wahr');
 }
 else
 {

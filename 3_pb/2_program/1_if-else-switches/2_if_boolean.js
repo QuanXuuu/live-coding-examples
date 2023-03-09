@@ -9,7 +9,7 @@ function divider(input)
 
 divider('Booleans');
 
-const isTestBool = false;
+const isTestBool = true;
 
 // wenn etwas WAHR ist, fuehre diesen fall aus.
 if(isTestBool === true)
@@ -24,7 +24,7 @@ if(isTestBool)
 
 // die folgende variable beinhaltet einen String, wenn dieser mit text gefuellt ist, dann hat die varable einen inhalt. Wenn dort keine text steht, ist der inhalt "null", also gernichts, Da der text dann GARKEINEN inhalt hat, kann man auf ihn auch nicht pruefen, ergo ist er "false";
 
-const testString = "";
+const testString = "123";
 
 if(testString)
 {

@@ -17,19 +17,19 @@ divider('Ternary Operator');
 const isTestBool = true;
 
 // unser typisches if-statement
-if(isTestBool === true)
+if(isTestBool)
 {
-    console.log('Boolean sagt ja');
+    console.log('1.Boolean sagt ja');
 }
 else
 {
-    console.log('Boolean sagt nein');
+    console.log('1.Boolean sagt nein');
 }
 
 // unser vorheriges if statement als ternary operator
 const ternaryCheck = isTestBool
 ?                   //IF
-'Boolean sagt ja'   //IF
+'2.Boolean sagt ja'   //IF
 :                   //ELSE
 'Boolean saft nein'; //ELSE
 
@@ -39,7 +39,7 @@ console.log(ternaryCheck);
 
 divider('Ternary operator if/else if')
 
-const speed = 33;
+const speed = 133;
 
 const ternaryCheck2 = 
 speed >= 120 ? 'Zu schnell!' // IF: speed groesser als gleich 120
@@ -95,7 +95,7 @@ speed  === 33 && console.log('Du faehrst zu schnell');
 
 // boolean immer "is" / "has" -- convention
 
-// const car = true; -- NO
+// const car = true; -- NO, not good var name
 const hasCar = true;
 
 // const admin = true; -- NO
