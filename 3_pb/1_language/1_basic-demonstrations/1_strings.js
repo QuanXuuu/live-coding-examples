@@ -7,7 +7,7 @@
     // Ein typischer string mit double quotes
     "This is a string";
 
-    // Eine single quoe innerhalb eines double-quote strings:
+    // Eine single quote innerhalb eines double-quote strings:
     "It's a string";
 
     // Ein single quote innerhalb eines single quote strings:
@@ -24,7 +24,7 @@
      console.log('Hallo' + ' ' + 'Welt');
 
      // zwei strings mit concatenation zusammenfuegen
-     'Hello' .concat('World');
+     'Hello'.concat('World');
 
      // mehrere strings innerhalb der concat methode hinzufuegen
-     console.log('Hello' .concat(' ', 'World'));
+     console.log('Hello'.concat(' World'));
