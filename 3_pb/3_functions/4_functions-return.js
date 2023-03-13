@@ -8,7 +8,7 @@ function divider(input)
 
 divider("Function Return");
 
-// Wenn wir in einer funktion etwas auswerten, koennen wir das ergebnis dieser funktio ausgeben, dies ist ein sogenanntes return statement.
+// Wenn wir in einer funktion etwas auswerten, koennen wir das ergebnis dieser funktion ausgeben, dies ist ein sogenanntes return statement.
 
 const number1 = 2;
 const number2 = 5;
@@ -47,13 +47,13 @@ const checkAge = function(age)
     // oder: return age >= adultAge;
 }
 
-const myAge = 45;
+const myAge = 15;
 const message = "Bist du schon volljaehrig? " + (checkAge(myAge) ? 'JA!' : 'Nein');
 
 console.log(message);
 
 // wir koennen eine funktion mit einme leerem retun statement auch dirckt unterbrechen:
-const tokensLeft = 3;
+const tokensLeft = 0;
 
 const playGame = function(tokens)
 {

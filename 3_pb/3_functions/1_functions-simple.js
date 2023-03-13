@@ -27,7 +27,7 @@ const showMessage = function()
 
 // damit der codeblock einer funktion ausgefuehrt wird, machen wir einen sogenannten "function call", andernfalls wird der code nicht ausgefuehrt.
 
-const darfAusfuehren = true;
+const darfAusfuehren = false;
 
 if(darfAusfuehren)
 {

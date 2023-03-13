@@ -17,7 +17,6 @@ divider("Function Intro");
 function darfSchonAutoFahren(alter)
 {
     const darfFahren = alter >= 18 ? true : false;
-
     return darfFahren;
 }
 
@@ -29,6 +28,14 @@ console.log("Person 2:", darfSchonAutoFahren(25));
  * @description geht durch ein array von ausweisen, und ruft für jeden ausweis die funktion checkAusweis auf.
  * @param ausweise
  */
+
+const ausweise = [
+    { name: "Hans", alter: 90 },
+    { name: "Lisa", alter: 12 },
+    { name: "Monika", alter: 18 },
+    { name: "Ali", alter: 13 },
+    { name: "Pebbles", alter: 0 }
+];
 
 function checkAlleAusweise(ausweise)
 {
@@ -44,9 +51,12 @@ function checkAlleAusweise(ausweise)
  * @description Ruft für jeden ausweis die funktion darfSchonAutofahren auf, und gibt den Name + darf oder nicht darf auto fahren zurück.
  * @param ausweis
  */
+
+
 function checkAusweis(ausweis)
 {
     const aktuellesAlter = ausweis.alter;
+
     if(darfSchonAutoFahren(aktuellesAlter))
     {
         return `${ ausweis.name } darf schon autofahren`;
@@ -55,12 +65,5 @@ function checkAusweis(ausweis)
     return `${ ausweis.name } darf noch nicht autofahren`;
 }
 
-const ausweise = [
-    { name: "Hans", alter: 90 },
-    { name: "Lisa", alter: 12 },
-    { name: "Monika", alter: 18 },
-    { name: "Ali", alter: 13 },
-    { name: "Pebbles", alter: 0 }
-];
 
 checkAlleAusweise(ausweise);

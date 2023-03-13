@@ -29,7 +29,7 @@ const welcomeMessage = function()
 {
     username = "John";
 
-    console.log(2, username);
+    //console.log(2, username);
 }
 
 console.log("vorher:", username);

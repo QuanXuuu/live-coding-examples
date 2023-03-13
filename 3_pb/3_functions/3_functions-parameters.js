@@ -52,7 +52,7 @@ divider("Defaultwerte")
 const chatMessageDefault = function(user, message = "Der user hat nichts geschrieben")
 {
     // theoretisch steht hier: message = message || "Der user hat nichts geschrieben";
-    console.log(user, ":", message);
+    console.log(user, "==>", message);
 }
 
 user = "John";
@@ -77,9 +77,10 @@ const countDown = function(number)
     }
     console.log(number);
 
-    countDown(number - 1);
+    countDown(number - 2);
 }
 
-let testNummer = 5;
+// let testNumber = 5;
+// countDown(testNumber);
 
-countDown(testNummer);
+countDown(10);
