@@ -111,4 +111,81 @@ function getAverage(arr)
 
 console.log(getAverage([deutschNote, englishNote, matheNote]));
 
+// Math.max
 
+function getMaxNumbers(num1, num2, num3)
+{
+    if(num1 > num2 && num1 > num3) return num1;
+    if(num2 > num3) return num2;
+    return num3;
+}
+
+function getMaxArray(numbers)
+{
+    if(numbers.length === 0)
+    {
+        return null;
+    }
+    let max = numbers[0];
+    for (let i = 1; i < numbers.length; i++)
+    {
+        if(numbers[i] > max)
+        {
+            max = numbers[i];
+        }
+    }
+    return max;
+}
+
+const max1 = getMaxNumbers(5, 6, 9);
+const max2 = getMaxArray([5, 60, 9]);
+
+console.log(max1);
+console.log(max2);
+
+// palindrome
+const word = 'level';
+const word2 = 'hallo';
+
+// console.log(word === word.split('').reverse().join(''));
+// console.log(word2 === word2.split('').reverse().join(''));
+
+function isPalindrome(word)
+{
+    const reversed = word.split('').reverse().join('');
+    return word === reversed;
+}
+
+console.log(isPalindrome('world'));
+console.log(isPalindrome('sos'));
+
+// Function Declaration
+myFunc(); // can be used before decalration
+
+function myFunc()
+{
+    console.log('Function declaration');
+}
+
+// Function expression
+const myFunc2 = function()
+{
+    console.log('Function expression');
+}
+
+// Arrow function
+const myFunc3 = () =>
+{
+    console.log('Arrow function');
+}
+
+// bei nur einer expression ist return statement impliziert und body block nicht noetig
+const myArrow = (num1, num2) => num1 * num2;
+
+// bei nur einem Parameter ist keine Runde klammer noetig, aber empfohlen
+const quadrat = x => x * x;
+
+myFunc3();
+myFunc3();
+console.log(myArrow(5,6));
+console.log(quadrat(8));
